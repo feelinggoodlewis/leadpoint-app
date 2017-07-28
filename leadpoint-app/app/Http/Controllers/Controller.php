@@ -24,6 +24,8 @@ class Controller extends BaseController
 
     public function index(Request $request) {
         if ($request->isMethod('post')) {
+            // TODO: Save lead here
+
             return response()->json([
                 'result' => '',
             ]);
