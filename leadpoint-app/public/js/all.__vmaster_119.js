@@ -1,4 +1,4 @@
-! function() {
+!function() {
     var t = !1,
         n = /xyz/.test(function() {
             xyz
@@ -76,7 +76,7 @@ HttpClient = function() {
         }).done(a)
     }
 };
-! function(o) {
+!function(o) {
     function t(o, t) {
         if (!(o.originalEvent.touches.length > 1)) {
             o.preventDefault();
@@ -166,6 +166,7 @@ Field = Class.extend({
         data = "estprg=1&single-field-validation=true&validationName=" + this.fieldName + "&validationValue=" + this.val() + "&" + this.fieldName + "=" + this.val() + "&ffsid=" + this.ffsid, httpClient.postUsingAjax(this, "POST", this.virtualPageviewUrl, data, function() {})
     },
     onValidationComplete: function(e) {
+
         this.markVisited(), e.result.invalid ? (this.setValid(!1), this.setErrorMessage(e.result.message), this.showValidationError(!0)) : (this.setValid(!0), this.setErrorMessage(""), this.showValidationError(!1)), this.setPendingValidation(!1), this.setStateKnown(!0), null != this.callBack && this.callBack(), this.removePlaceHolder()
     },
     isPendingValidation: function() {
