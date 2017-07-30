@@ -180,7 +180,6 @@
 
     //group1 PRODUCT
     slide1 = { groupName: "PRODUCT", fieldGroupId: "PRODUCT_FIELD_GROUP", fieldGroupHeader: "Type of Loan", fieldGroupCssClasses: "field-group", formGroupCssClasses: "form-group", fieldGroupInlineCss: "", fieldGroupProduct: "ALL", canAutoNext: !0, hideNextButton: !0, showPageHeader: !0, showProgressbar: !1, showProgressText: !0, progressText: "Takes less than a minute, no login required", fields: [{ fieldName: "PRODUCT", defaultValue: "", fieldType: "ProductTileInput", buttons: [{ buttonId: "refi-button", buttonText: "Refinance", buttonValue: "PP_REFI", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-5 " + refiExtraClass }, { buttonId: "mortgage-button", buttonText: "Purchase Home", buttonValue: "PP_NEWHOME", buttonClasses: "btn", buttonDivClasses: "border col-sm-5 " + newHomeExtraClass }], buttonInnerGroupClasses: "btn-group", buttonOutterGroupClasses: "border row", productPageHeaderId: "product-header", productPageSubHeaderId: "product-subheader", productPageHeadSubTexts: [{ productId: "PP_REFI", productPageHeaderText: "Easily Compare Mortgage Rates!", productPageSubHeaderText: "" }, { productId: "PP_NEWHOME", productPageHeaderText: "Easily Compare Mortgage Rates!", productPageSubHeaderText: "" }] }] },
-
     //group2 PRODUCT DESCRIPTION
     slide2 = { groupName: "PROP_DESC", fieldGroupId: "PROP_DESC_FIELD_GROUP", fieldGroupHeader: "Property Description", fieldGroupCssClasses: "field-group", formGroupCssClasses: "form-group", fieldGroupInlineCss: "display:none", fieldGroupProduct: "ALL", canAutoNext: !0, hideNextButton: !0, showPageHeader: !0, showProgressbar: !1, fields: [{ fieldName: "PROP_DESC", defaultValue: "", fieldType: "TileInput", buttons: [{ buttonId: "single_prop", buttonText: "Single Family", buttonValue: "single_fam", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-3 col-xs-6" }, { buttonId: "multiple_prop", buttonText: "Multi Family", buttonValue: "multi_fam", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-3 col-xs-6" }, { buttonId: "townhouse_prop", buttonText: "Town House", buttonValue: "town_house", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-3 col-xs-6" }, { buttonId: "condo_prop", buttonText: "Condominium", buttonValue: "condo", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-3 col-xs-6" }], buttonInnerGroupClasses: "btn-group", buttonOutterGroupClasses: "border row" }] },
     //group3 Estimated Credit Rating
@@ -264,7 +263,7 @@
       var detect = { ios: !0 === navigator.userAgent.match(/iPhone|iPad|iPod/i) || /iphone|ipod|ipad/.test(window.navigator.userAgent.toLowerCase()) }; detect.ios && $("#footerLinks").addClass("ios-friendly"), function (e, t, s, o, l, a, r) { e.GoogleAnalyticsObject = l, e[l] = e[l] || function () { (e[l].q = e[l].q || []).push(arguments) }, e[l].l = 1 * new Date, a = t.createElement(s), r = t.getElementsByTagName(s)[0], a.async = 1, a.src = o, r.parentNode.insertBefore(a, r) }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"); var regex = new RegExp("[\\?&]gclid=([^&#]*)"), results = regex.exec(location.search), gclid = null == results ? "" : decodeURIComponent(results[1].replace(/\+/g, " ")); FS.analytics.init(window.googleAnalyticsKey), FS.analytics.activateAdvertiserFeatures(), FS.analytics.trackCustomVars(), FS.analytics.trackPageview(window.virtualPageviewUrl + "&gclid=" + gclid), window.dataLayer = [{ a: "33711", i: "17593" }], function (e, t, s, o, l) { e[o] = e[o] || [], e[o].push({ "gtm.start": (new Date).getTime(), event: "gtm.js" }); var a = t.getElementsByTagName(s)[0], r = t.createElement(s), i = "dataLayer" != o ? "&l=" + o : ""; r.async = !0, r.src = "//www.googletagmanager.com/gtm.js?id=" + l + i, a.parentNode.insertBefore(r, a) }(window, document, "script", "dataLayer", "GTM-WQZQGX");
   </script>
   <noscript>
-    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WQZQGX" height="0" width="0" style="display:none;visibility:hidden;"></iframe>
+    <!-- <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WQZQGX" height="0" width="0" style="display:none;visibility:hidden;"></iframe>-->
   </noscript>
 
   <script type="text/javascript">
@@ -345,8 +344,6 @@
       $("#LPKEY").val(context.fieldValues.EXPIRED_FORM);
     }
   </script>
-
-
 
   <script src="{{ asset('js/all-listing-lti-652.min.js') }}"></script>
 
@@ -524,34 +521,26 @@
           return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
         }
 
+        // Add required hidden inputs to the form
+        $("#form1").append("<input type='hidden' name='aid' value='41091'>")
+
         var gclid = getParam('gclid');
 
         if (gclid) {
-
           var gclsrc = getParam('gclsrc');
           if (!gclsrc || gclsrc.indexOf('aw') !== -1) {
             setCookie('gclid', gclid, 90);
-
             addGCLIDToForm(gclid);
           }
-
         }
 
         function addGCLIDToForm(gclid) {
-
           try {
-
             if ($('#gclid_field').length <= 0) {
               $("#form1").append("<input type='hidden' id='GCLID' name='GCLID' value='" + gclid + "'>")
             }
-
             $('#GCLID').val(gclid);
-
-
-
           } catch (err) {
-
-
           }
         }
   </script>

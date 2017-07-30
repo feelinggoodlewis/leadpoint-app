@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use GuzzleHttp\Exception\GuzzleException;
+use GuzzleHttp\Client;
+use GuzzleHttp\Cookie\CookieJar;
 use View;
 use Validator;
 use Session;
@@ -24,10 +27,35 @@ class Controller extends BaseController
 
     public function index(Request $request) {
         if ($request->isMethod('post')) {
-            // TODO: Save lead here
+            $data = '';
+
+            if ($request->get('__submit') == '1') {
+                $client = new \GuzzleHttp\Client(['cookies' => true]);
+                $result = $client->post('https://www.leadpointdelivery.com/18710/direct.ilp', [
+                     'form_params' => $request->all()
+                ]);
+                $data = $result->getBody();
+                $data = $request->all();
+            } else {
+                $data = $request->all();
+            }
+
+            // Fetch the jobs
+            /*
+            $result = $client->post('https://svc.beyond.com/api/v1.0/'.$partner.'/jobs/search', [
+                'form_params' => [
+                    'aff' => $affiliateId,
+                    'k' => $keywords,
+                    'ps' => $count,
+                    'l' => $zip
+                ]
+            ]);*/
+
+
 
             return response()->json([
                 'result' => '',
+                'data' => $data
             ]);
         }
     }
