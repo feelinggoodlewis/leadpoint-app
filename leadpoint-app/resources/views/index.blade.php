@@ -110,12 +110,12 @@
     <footer class="footerSection">
       <div id="footerLinks">
         <ul>
-          <li id="footerLink0" class=""><a href="/unsubscribe.customer" class="tmmfs_lightboxLink">Unsubscribe</a></li>
-          <li id="footerLink1" class=""><a href="/contact.customer" class="tmmfs_lightboxLink">Contact Us</a></li>
-          <li id="footerLink2" class=""><a href="/contact.customer" class="tmmfs_lightboxLink">Lenders</a></li>
-          <li id="footerLink3" class=""><a href="/urf_terms_conditions%20-%20fharateguide.article" class="tmmfs_lightboxLink">Terms &amp; Conditions</a></li>
+          <li id="footerLink0" class=""><a href="#" class="tmmfs_lightboxLink">Unsubscribe</a></li>
+          <li id="footerLink1" class=""><a href="#" class="tmmfs_lightboxLink">Contact Us</a></li>
+          <li id="footerLink2" class=""><a href="#" class="tmmfs_lightboxLink">Lenders</a></li>
+          <li id="footerLink3" class=""><a href="#" class="tmmfs_lightboxLink">Terms &amp; Conditions</a></li>
           <li
-            id="footerLink4" class=""><a href="/urf_privacy%20-%20fharateguide.article" class="tmmfs_lightboxLink">Privacy Policy</a></li>
+            id="footerLink4" class=""><a href="#" class="tmmfs_lightboxLink">Privacy Policy</a></li>
             <li id="footerLink5"
               class="listLastItem"><a href="//www.leadpoint.com/licenses.php" class="tmmfs_popLink">Licenses</a></li>
         </ul>
@@ -134,10 +134,10 @@
             This offer may not be available in all states and is subject to change without notice. Payment does not include
             taxes and insurance premiums. Some state and county maximum loan amount restrictions may apply. Mortgage rates
             could change daily. Actual payments will vary based on your individual situation and current rates. Some restrictions
-            may apply.<br><br><br>[NMLS ID: 3175] <a target="_blank" href="http://nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/3175\">NMLS License Access Page</a></p>
+            may apply.<br><br><br>[NMLS ID: 3175] <a target="_blank" href="#">NMLS License Access Page</a></p>
         </p>
       </div>
-      <div class="container text-center" id="copyright">Copyright &#0169; 2017 FHA Rate Guide. All rights reserved.</div>
+      <div class="container text-center" id="copyright">Copyright &#0169; All rights reserved.</div>
     </footer>
     <!--[if gte IE 8]>
 	 	<link rel="stylesheet" href="//d2qcrzwi3hrnuy.cloudfront.net/fs3/css/ie-only__vmaster_119.css"/>
@@ -164,7 +164,6 @@
       'virtualPageviewUrl': '/?formFlowConfigId=962&estprg=1&viewType=FULL',
       'fieldValues': { "ZIP": "91766", "PROP_DESC": "multi_fam", "SLIDE-CHANGE": "true", "POSTCODE": "91766", "STATE": "CA", "FORMFLOWCONFIGID": "962", "COUNTRY": "United States", "EST_VAL": "450000", "FFSID": "ffs-015d-872f1355-28718", "LOAN_TYPE": "Fixed", "VALIDATIONVALUE": "multi_fam", "VALIDATIONNAME": "PROP_DESC", "BANK": "bank_of_america", "VIEWTYPE": "FULL", "SLIDEINDEX": "17", "SLIDEGROUP": "", "NUM_MORTGAGE_LATES": "TWO_OR_MORE", "ESTPRG": "1", "FHA_BANK_FORECLOSURE": "yes", "ANNUAL_VERIFIABLE_INCOME": "no", "CRED_GRADE": "GOOD", "CITY": "Pomona", "ADDRESS": "678", "VA_STATUS": "no", "SINGLE-FIELD-VALIDATION": "true" }
     }
-
   </script>
   <script>
     // FIXME: we will get rid of this
