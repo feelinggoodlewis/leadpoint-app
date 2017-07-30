@@ -26,11 +26,6 @@ class Controller extends BaseController
     }
 
     public function index(Request $request) {
-        // Get request geolocation
-        $ip = $request->ip();
-        $location = \Location::get($ip);
-        $zip = $location->zipCode;
-
         if ($request->isMethod('post')) {
             $data = '';
 
@@ -56,13 +51,19 @@ class Controller extends BaseController
                 ]
             ]);*/
 
-
-
             return response()->json([
                 'result' => '',
                 'data' => $data
             ]);
+        } else {
+             // Get request geolocation
+            $ip = $request->ip();
+            $location = \Location::get($ip);
+            $zip = $location->zipCode;
+            $data['zip'] = $zip;
+            return view('index', $data);
         }
+
     }
 }
 
