@@ -162,7 +162,7 @@
     var context = {
       'ffsid': 'ffs-015d-872f1355-28718',
       'virtualPageviewUrl': '/?formFlowConfigId=962&estprg=1&viewType=FULL',
-      'fieldValues': { "ZIP": "{{ $zip }}", "PROP_DESC": "multi_fam", "SLIDE-CHANGE": "true", "POSTCODE": "{{ $zip }}}", "STATE": "", "FORMFLOWCONFIGID": "962", "COUNTRY": "United States", "EST_VAL": "", "FFSID": "", "LOAN_TYPE": "", "VALIDATIONVALUE": "multi_fam", "VALIDATIONNAME": "", "BANK": "", "VIEWTYPE": "FULL", "SLIDEINDEX": "", "SLIDEGROUP": "", "NUM_MORTGAGE_LATES": "TWO_OR_MORE", "ESTPRG": "1", "FHA_BANK_FORECLOSURE": "", "ANNUAL_VERIFIABLE_INCOME": "no", "CRED_GRADE": "GOOD", "CITY": "", "ADDRESS": "", "VA_STATUS": "no", "SINGLE-FIELD-VALIDATION": "true" }
+      'fieldValues': { "ZIP": "{{ $zip }}", "PROP_DESC": "multi_fam", "SLIDE-CHANGE": "true", "POSTCODE": "{{ $zip }}", "STATE": "", "FORMFLOWCONFIGID": "962", "COUNTRY": "United States", "EST_VAL": "", "FFSID": "", "LOAN_TYPE": "", "VALIDATIONVALUE": "multi_fam", "VALIDATIONNAME": "", "BANK": "", "VIEWTYPE": "FULL", "SLIDEINDEX": "", "SLIDEGROUP": "", "NUM_MORTGAGE_LATES": "TWO_OR_MORE", "ESTPRG": "1", "FHA_BANK_FORECLOSURE": "", "ANNUAL_VERIFIABLE_INCOME": "no", "CRED_GRADE": "GOOD", "CITY": "", "ADDRESS": "", "VA_STATUS": "no", "SINGLE-FIELD-VALIDATION": "true" }
     }
   </script>
   <script>
