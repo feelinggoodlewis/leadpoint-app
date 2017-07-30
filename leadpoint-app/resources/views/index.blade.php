@@ -28,7 +28,7 @@
   <meta name="description" content="This site helps consumers find a new mortgage rate">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="alfWNbZBKRZdz3EPn6BCppkloz58neqyc2Xrv-odPr8">
-  <title>Mortgage News and Rates - FHA Rate Guide</title>
+  <title>Mortgage News and Rates - LeadPoint App</title>
   <link rel="shortcut icon" href="{{ asset('images/favicon-fha__vmaster_119.png') }}">
 </head>
 
@@ -122,10 +122,10 @@
       </div>
       <div class="container" id="containerFooter">
         <p>
-          <p>FHA RATE GUIDE is an online news and information service providing editorial content and directory information
-            about mortgages and loans. FHA RATE GUIDE is not a lender or mortgage broker and does not offer loans or mortgages
-            directly or indirectly through representatives or agents. FHA RATE GUIDE does not provide an application for
-            credit or a mortgage loan. FHA RATE GUIDE is not responsible for the accuracy of information or responsible for
+          <p>LeadPoint is an online news and information service providing editorial content and directory information
+            about mortgages and loans. LeadPointis not a lender or mortgage broker and does not offer loans or mortgages
+            directly or indirectly through representatives or agents. LeadPoint does not provide an application for
+            credit or a mortgage loan. LeadPoint is not responsible for the accuracy of information or responsible for
             the accuracy of the rates, APR or loan information posted by brokers, lenders or advertisers. All trademarks
             and logos appearing on this site are the property of their respective owners. Their appearance on this site does
             not indicate or imply an endorsement of our product.<br><br>Terms and Conditions Apply –<br>The actual interest
@@ -134,7 +134,7 @@
             This offer may not be available in all states and is subject to change without notice. Payment does not include
             taxes and insurance premiums. Some state and county maximum loan amount restrictions may apply. Mortgage rates
             could change daily. Actual payments will vary based on your individual situation and current rates. Some restrictions
-            may apply.<br><br><br>[NMLS ID: 3175] <a target="_blank" href="#">NMLS License Access Page</a></p>
+            may apply.<br><br><br>[NMLS ID: XXXX] <a target="_blank" href="#">NMLS License Access Page</a></p>
         </p>
       </div>
       <div class="container text-center" id="copyright">Copyright &#0169; All rights reserved.</div>
@@ -162,7 +162,7 @@
     var context = {
       'ffsid': 'ffs-015d-872f1355-28718',
       'virtualPageviewUrl': '/?formFlowConfigId=962&estprg=1&viewType=FULL',
-      'fieldValues': { "ZIP": "{{ $zip }}", "PROP_DESC": "multi_fam", "SLIDE-CHANGE": "true", "POSTCODE": "{{ $zip }}", "STATE": "", "FORMFLOWCONFIGID": "962", "COUNTRY": "United States", "EST_VAL": "", "FFSID": "", "LOAN_TYPE": "", "VALIDATIONVALUE": "multi_fam", "VALIDATIONNAME": "", "BANK": "", "VIEWTYPE": "FULL", "SLIDEINDEX": "", "SLIDEGROUP": "", "NUM_MORTGAGE_LATES": "TWO_OR_MORE", "ESTPRG": "1", "FHA_BANK_FORECLOSURE": "", "ANNUAL_VERIFIABLE_INCOME": "no", "CRED_GRADE": "GOOD", "CITY": "", "ADDRESS": "", "VA_STATUS": "no", "SINGLE-FIELD-VALIDATION": "true" }
+      'fieldValues': { "ZIP": "{{ $zip }}", "PROP_DESC": "multi_fam", "SLIDE-CHANGE": "true", "POSTCODE": "{{ $zip }}}", "STATE": "", "FORMFLOWCONFIGID": "962", "COUNTRY": "United States", "EST_VAL": "", "FFSID": "", "LOAN_TYPE": "", "VALIDATIONVALUE": "multi_fam", "VALIDATIONNAME": "", "BANK": "", "VIEWTYPE": "FULL", "SLIDEINDEX": "", "SLIDEGROUP": "", "NUM_MORTGAGE_LATES": "TWO_OR_MORE", "ESTPRG": "1", "FHA_BANK_FORECLOSURE": "", "ANNUAL_VERIFIABLE_INCOME": "no", "CRED_GRADE": "GOOD", "CITY": "", "ADDRESS": "", "VA_STATUS": "no", "SINGLE-FIELD-VALIDATION": "true" }
     }
   </script>
   <script>
