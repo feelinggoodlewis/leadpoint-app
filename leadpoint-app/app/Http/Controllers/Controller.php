@@ -16,6 +16,7 @@ use GuzzleHttp\Cookie\CookieJar;
 use View;
 use Validator;
 use Session;
+use Carbon;
 
 class Controller extends BaseController
 {
@@ -58,9 +59,14 @@ class Controller extends BaseController
         } else {
              // Get request geolocation
             $ip = $request->ip();
+            $captureTime = Carbon\Carbon::now()->toDateTimeString();
             $location = \Location::get($ip);
             $zip = $location->zipCode;
+
             $data['zip'] = $zip;
+            $data['ipAddress'] = $ip;
+            $data['captureTime'] = $captureTime;
+
             return view('index', $data);
         }
 

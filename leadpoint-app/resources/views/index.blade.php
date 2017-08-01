@@ -259,7 +259,7 @@
       setTimeout(function () { $("#ios_hover_fix").remove() }, 1500);
 
       // check for ios8
-      var detect = { ios: !0 === navigator.userAgent.match(/iPhone|iPad|iPod/i) || /iphone|ipod|ipad/.test(window.navigator.userAgent.toLowerCase()) }; detect.ios && $("#footerLinks").addClass("ios-friendly"), function (e, t, s, o, l, a, r) { e.GoogleAnalyticsObject = l, e[l] = e[l] || function () { (e[l].q = e[l].q || []).push(arguments) }, e[l].l = 1 * new Date, a = t.createElement(s), r = t.getElementsByTagName(s)[0], a.async = 1, a.src = o, r.parentNode.insertBefore(a, r) }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"); var regex = new RegExp("[\\?&]gclid=([^&#]*)"), results = regex.exec(location.search), gclid = null == results ? "" : decodeURIComponent(results[1].replace(/\+/g, " ")); FS.analytics.init(window.googleAnalyticsKey), FS.analytics.activateAdvertiserFeatures(), FS.analytics.trackCustomVars(), FS.analytics.trackPageview(window.virtualPageviewUrl + "&gclid=" + gclid), window.dataLayer = [{ a: "33711", i: "17593" }], function (e, t, s, o, l) { e[o] = e[o] || [], e[o].push({ "gtm.start": (new Date).getTime(), event: "gtm.js" }); var a = t.getElementsByTagName(s)[0], r = t.createElement(s), i = "dataLayer" != o ? "&l=" + o : ""; r.async = !0, r.src = "//www.googletagmanager.com/gtm.js?id=" + l + i, a.parentNode.insertBefore(r, a) }(window, document, "script", "dataLayer", "GTM-WQZQGX");
+      var detect = { ios: !0 === navigator.userAgent.match(/iPhone|iPad|iPod/i) || /iphone|ipod|ipad/.test(window.navigator.userAgent.toLowerCase()) }; detect.ios && $("#footerLinks").addClass("ios-friendly"), function (e, t, s, o, l, a, r) { e.GoogleAnalyticsObject = l, e[l] = e[l] || function () { (e[l].q = e[l].q || []).push(arguments) }, e[l].l = 1 * new Date, a = t.createElement(s), r = t.getElementsByTagName(s)[0], a.async = 1, a.src = o, r.parentNode.insertBefore(a, r) }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"); var regex = new RegExp("[\\?&]gclid=([^&#]*)"), results = regex.exec(location.search), gclid = null == results ? "" : decodeURIComponent(results[1].replace(/\+/g, " ")); FS.analytics.init(window.googleAnalyticsKey), FS.analytics.activateAdvertiserFeatures(), FS.analytics.trackCustomVars(), FS.analytics.trackPageview(window.virtualPageviewUrl + "&gclid=" + gclid), window.dataLayer = [{ a: "41091", i: "18710" }], function (e, t, s, o, l) { e[o] = e[o] || [], e[o].push({ "gtm.start": (new Date).getTime(), event: "gtm.js" }); var a = t.getElementsByTagName(s)[0], r = t.createElement(s), i = "dataLayer" != o ? "&l=" + o : ""; r.async = !0, r.src = "//www.googletagmanager.com/gtm.js?id=" + l + i, a.parentNode.insertBefore(r, a) }(window, document, "script", "dataLayer", "GTM-WQZQGX");
   </script>
   <noscript>
     <!-- <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WQZQGX" height="0" width="0" style="display:none;visibility:hidden;"></iframe>-->
@@ -521,7 +521,9 @@
         }
 
         // Add required hidden inputs to the form
-        $("#form1").append("<input type='hidden' name='aid' value='41091'>")
+        $("#form1").append("<input type='hidden' name='aid' value='41091'>");
+        $("#form1").append("<input type='hidden' name='ip_address' value='{{ $ipAddress }}'>");
+        $("#form1").append("<input type='hidden' name='capture_time' value='{{ $captureTime }}'>");
 
         var gclid = getParam('gclid');
 
