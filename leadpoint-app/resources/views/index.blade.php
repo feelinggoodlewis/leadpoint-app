@@ -37,7 +37,7 @@
     <nav class="navbar navbar-inverse navbar-no-bg" role="navigation" id="nav-bg-content">
       <div class="container" id="form-container-header">
         <div class="navbar-header col-sm-3" id="navbar-header-logo">
-          <div class="logo-icon" id="brand-logo"><img id="form-logo" style="margin-top:15px; display: inline;" class="img-responsive" src="{{ asset('images/logo-fha__vmaster_119.png') }}"></div>
+          <div class="logo-icon" id="brand-logo"><img id="form-logo" style="margin-top:15px; display: inline;" class="img-responsive" src="{{ asset('images/ratecheetah1.png') }}"></div>
         </div>
         <div class="col-sm-6" id="main-header">
           <div class="" id="headerText">

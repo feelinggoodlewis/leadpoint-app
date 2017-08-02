@@ -31,26 +31,20 @@ class Controller extends BaseController
             $data = '';
 
             if ($request->get('__submit') == '1') {
-                $client = new \GuzzleHttp\Client(['cookies' => true]);
-                $result = $client->post('https://www.leadpointdelivery.com/18710/direct.ilp', [
-                     'form_params' => $request->all()
-                ]);
-                $data = $result->getBody();
-                $data = $request->all();
+                if ($request->get('CRED_GRADE') == 'POOR') {
+                    return redirect('thanks');
+                } else {
+                    $client = new \GuzzleHttp\Client(['cookies' => true]);
+                    $result = $client->post('https://www.leadpointdelivery.com/18710/direct.ilp', [
+                        'form_params' => $request->all()
+                    ]);
+                    $data = $result->getBody();
+                    $data = $request->all();
+                    return redirect('confirmation');
+                }
             } else {
                 $data = $request->all();
             }
-
-            // Fetch the jobs
-            /*
-            $result = $client->post('https://svc.beyond.com/api/v1.0/'.$partner.'/jobs/search', [
-                'form_params' => [
-                    'aff' => $affiliateId,
-                    'k' => $keywords,
-                    'ps' => $count,
-                    'l' => $zip
-                ]
-            ]);*/
 
             return response()->json([
                 'result' => '',

@@ -19,6 +19,14 @@ Route::get('/test', function () {
     return view('test');
 });
 
+Route::get('/thanks', function () {
+    return view('thanks');
+});
+
+Route::get('/confirmation', function () {
+    return view('confirmation');
+});
+
 Route::post('/', [
     'uses' => 'Controller@index'
 ]);
