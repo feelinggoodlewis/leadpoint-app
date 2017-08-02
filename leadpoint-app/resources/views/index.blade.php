@@ -28,7 +28,7 @@
   <meta name="description" content="This site helps consumers find a new mortgage rate">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="alfWNbZBKRZdz3EPn6BCppkloz58neqyc2Xrv-odPr8">
-  <title>Mortgage News and Rates - LeadPoint App</title>
+  <title>Mortgage News and Rates - RateCheetah</title>
   <link rel="shortcut icon" href="{{ asset('images/favicon-fha__vmaster_119.png') }}">
 </head>
 
@@ -97,16 +97,7 @@
   </div>
   </div>
   <div id="bottom-section" class="container">
-    <div id="securityLogo">
-      <ul>
-        <li><a href="javascript:window.open('//www.securerights.org', 'SecureRights', 'width=800,height=400,scrollbars', 'true').focus();"
-            id="secureSealImg" <="" a=""></a></li>
-        <li><a href="javascript:window.open('//www.leadpoint.com/licenses.php', 'EqualHousing', 'width=800,height=400,scrollbars', 'true').focus();"
-            id="houseSealImg"></a></li>
-        <li><a href="javascript:window.open('//www.bbb.org/losangelessiliconvalley/business-reviews/marketing-programs-and-services/leadpoint-in-los-angeles-ca-100025882', 'BBB', 'width=800,height=400,scrollbars', 'true').focus();"
-            id="bbOnlineSealImg"></a></li>
-      </ul>
-    </div>
+
     <footer class="footerSection">
       <div id="footerLinks">
         <ul>
@@ -116,16 +107,14 @@
           <li id="footerLink3" class=""><a href="#" class="tmmfs_lightboxLink">Terms &amp; Conditions</a></li>
           <li
             id="footerLink4" class=""><a href="#" class="tmmfs_lightboxLink">Privacy Policy</a></li>
-            <li id="footerLink5"
-              class="listLastItem"><a href="//www.leadpoint.com/licenses.php" class="tmmfs_popLink">Licenses</a></li>
         </ul>
       </div>
       <div class="container" id="containerFooter">
         <p>
-          <p>LeadPoint is an online news and information service providing editorial content and directory information
-            about mortgages and loans. LeadPointis not a lender or mortgage broker and does not offer loans or mortgages
+          <p>RateCheetah is an online news and information service providing editorial content and directory information
+            about mortgages and loans. RateCheetah is not a lender or mortgage broker and does not offer loans or mortgages
             directly or indirectly through representatives or agents. LeadPoint does not provide an application for
-            credit or a mortgage loan. LeadPoint is not responsible for the accuracy of information or responsible for
+            credit or a mortgage loan. RateCheetah is not responsible for the accuracy of information or responsible for
             the accuracy of the rates, APR or loan information posted by brokers, lenders or advertisers. All trademarks
             and logos appearing on this site are the property of their respective owners. Their appearance on this site does
             not indicate or imply an endorsement of our product.<br><br>Terms and Conditions Apply –<br>The actual interest
@@ -134,7 +123,7 @@
             This offer may not be available in all states and is subject to change without notice. Payment does not include
             taxes and insurance premiums. Some state and county maximum loan amount restrictions may apply. Mortgage rates
             could change daily. Actual payments will vary based on your individual situation and current rates. Some restrictions
-            may apply.<br><br><br>[NMLS ID: XXXX] <a target="_blank" href="#">NMLS License Access Page</a></p>
+            may apply.<br><br><br></p>
         </p>
       </div>
       <div class="container text-center" id="copyright">Copyright &#0169; All rights reserved.</div>
@@ -162,7 +151,7 @@
     var context = {
       'ffsid': 'ffs-015d-872f1355-28718',
       'virtualPageviewUrl': '/?formFlowConfigId=962&estprg=1&viewType=FULL',
-      'fieldValues': { "ZIP": "{{ $zip }}", "PROP_DESC": "multi_fam", "SLIDE-CHANGE": "true", "POSTCODE": "{{ $zip }}}", "STATE": "", "FORMFLOWCONFIGID": "962", "COUNTRY": "United States", "EST_VAL": "", "FFSID": "", "LOAN_TYPE": "", "VALIDATIONVALUE": "multi_fam", "VALIDATIONNAME": "", "BANK": "", "VIEWTYPE": "FULL", "SLIDEINDEX": "", "SLIDEGROUP": "", "NUM_MORTGAGE_LATES": "TWO_OR_MORE", "ESTPRG": "1", "FHA_BANK_FORECLOSURE": "", "ANNUAL_VERIFIABLE_INCOME": "no", "CRED_GRADE": "GOOD", "CITY": "", "ADDRESS": "", "VA_STATUS": "no", "SINGLE-FIELD-VALIDATION": "true" }
+      'fieldValues': { "ZIP": "{{ $zip }}", "PROP_DESC": "multi_fam", "SLIDE-CHANGE": "true", "POSTCODE": "{{ $zip }}}", "STATE": "{{ $state }}", "FORMFLOWCONFIGID": "962", "COUNTRY": "United States", "EST_VAL": "", "FFSID": "", "LOAN_TYPE": "", "VALIDATIONVALUE": "multi_fam", "VALIDATIONNAME": "", "BANK": "", "VIEWTYPE": "FULL", "SLIDEINDEX": "", "SLIDEGROUP": "", "NUM_MORTGAGE_LATES": "TWO_OR_MORE", "ESTPRG": "1", "FHA_BANK_FORECLOSURE": "", "ANNUAL_VERIFIABLE_INCOME": "no", "CRED_GRADE": "GOOD", "CITY": "", "ADDRESS": "", "VA_STATUS": "no", "SINGLE-FIELD-VALIDATION": "true" }
     }
   </script>
   <script>
@@ -243,7 +232,7 @@
   });
 
   var slideManager = new CustomSlideManager(allSlides, sliderManagerConfigOptions, $("#field-groups"), "PRODUCT", "main-header", context);
-  ZIP.getCityState = function (e) { data = "formFlowConfigId=" + formFlowConfigId, httpClient.postUsingAjax(this, "GET", "/api/formdata/" + formFlowConfigId + "?zip=" + this.val(), data, e) }, $("#headerText").append($("#progress-text")),
+  ZIP.getCityState = function (e) { data = "formFlowConfigId=" + formFlowConfigId, httpClient.postUsingAjax(this, "GET", "/validateZip?zip=" + this.val(), data, e) }, $("#headerText").append($("#progress-text")),
 
   //('#navbar-right').append($('#progress-step-container'));
   $("#FIELD-BODY-ZIP").append($("#city-none-edit-container").detach()), $(window).resize(function () { removeMobiAbsolutePositioning(slideManager.currentSlide) }); var onClickFired = !1; $("#mortgage-two-yes-btn").on("click", function () { onClickFired = !0, addRemoveAbsolutePositioning(slideManager.currentSlide) });

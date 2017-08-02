@@ -15,6 +15,10 @@ Route::get('/', [
     'uses' => 'Controller@index'
 ]);
 
+Route::get('/validateZip', [
+    'uses' => 'Controller@validateZip'
+]);
+
 Route::get('/test', function () {
     return view('test');
 });
