@@ -50,9 +50,7 @@
               <p>Congratulations! Submission complete. As part of our quality verification to ensure you get the best service possible, we will give you a quick call to confirm your details then match you to the most relevant advisor, please be ready to receive our call shortly.</p>
             </div>
           </div>
-
           <div class="col-md-12">
-
           </div>
         </div>
       </div>
@@ -60,6 +58,12 @@
   </div>
   </div>
   <div id="bottom-section" class="container">
+  <div id="securityLogo">
+      <ul>
+        <li><a href="javascript:window.open('//www.securerights.org', 'SecureRights', 'width=800,height=400,scrollbars', 'true').focus();"
+            id="secureSealImg"></a></li>
+      </ul>
+    </div>
     <footer class="footerSection">
       <div id="footerLinks">
         <ul>

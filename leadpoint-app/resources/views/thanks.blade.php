@@ -51,7 +51,12 @@
   </div>
   </div>
   <div id="bottom-section" class="container">
-
+    <div id="securityLogo">
+      <ul>
+        <li><a href="javascript:window.open('//www.securerights.org', 'SecureRights', 'width=800,height=400,scrollbars', 'true').focus();"
+            id="secureSealImg"></a></li>
+      </ul>
+    </div>
     <footer class="footerSection">
       <div id="footerLinks">
         <ul>
