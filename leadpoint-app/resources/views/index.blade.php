@@ -55,16 +55,20 @@
           </ul>
         </div>
       </div>
-      <div class="container">
-        <div id="progress-step-container">
-          <div class="step" id="progress-text"></div>
-          <div id="progressbar"><span id="progressbar-text">0%</span></div>
-          <div class="clear"></div>
-        </div>
-      </div>
+
     </nav>
   </div>
   <div class="top-content">
+
+     <div class="container">
+        <div id="progress-step-container">
+          <div class="step" id="progress-text"></div>
+          <div id="progressbar" style="border-radius: 0;"><span id="progressbar-text">0%</span></div>
+          <div class="clear"></div>
+        </div>
+      </div>
+
+
     <div class="inner-bg fixed-bg">
       <div class="container">
         <div class="row">
@@ -544,6 +548,15 @@
           }
         }
   </script>
+
+  <!--Place this script between </form> and </body>--> <script>
+dataLayer = [{
+'a': '41091', 'i': '18710'
+}];
+</script>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCMVZ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-KCMVZ6');</script>
+<!--end SR tag-->
 </body>
 
 </html>

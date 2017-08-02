@@ -38,8 +38,12 @@
         line-height: 1;
         min-width: 320px;
         text-align: center;
-        background-color: #92d5d8;
+        background-color: #ADD67F;
         overflow-x: hidden
+    }
+
+    .form-box {
+        padding-top: 10px;
     }
 
     #product-header,
@@ -49,16 +53,18 @@
 
     .navbar,
     .navbar.navbar-no-bg {
-        background: 0 0
+        background: 0 0;
+        background-color: #fff;
     }
 
     #header-section {
-        min-height: 112px
+        min-height: 68px
     }
 
     .navbar {
         margin-bottom: 30px;
         padding-top: 10px;
+        padding-bottom: 30px;
         border: 0;
         -o-transition: all .3s;
         -moz-transition: all .3s;
@@ -238,7 +244,7 @@
     }
 
     .inner-bg {
-        background: url(/images/house-background.png) center center no-repeat #92d5d8;
+        background: url(/images/house-background.png) center center no-repeat #ADD67F;
         background-size: contain;
         padding-bottom: 40px;
         transition: background .2s ease;
@@ -407,7 +413,7 @@
         text-align: center;
         margin: 0;
         border-radius: 0;
-        background: #0049ab;
+        background: green;
         border: none;
         position: relative
     }
@@ -418,15 +424,15 @@
         font-size: 12px;
         line-height: 16px;
         color: #000;
-        font-weight: 400
+        font-weight: 400;
+        text-align: center;
     }
 
     body #progressbar.ui-widget-content {
         height: 15px;
         background: #dedede;
-        border-radius: 5px;
         border: .5px solid #034bac;
-        width: 78%;
+        width: 90%;
         float: right
     }
 
@@ -446,15 +452,12 @@
     }
 
     body #progress-step-container {
-        max-width: 240px;
         clear: both;
-        margin: auto 15px auto auto;
         position: relative;
         float: right;
         width: 100%;
         background: #fff;
         padding: 4px 15px 4px 0;
-        border-radius: 5px;
         -webkit-box-shadow: 1px 1px 1px 1px #aaa;
         -moz-box-shadow: 1px 1px 1px 1px #aaa;
         box-shadow: 1px 1px 1px 1px #aaa;
@@ -475,9 +478,7 @@
 
     @media only screen and (max-width:767px) {
         body #progress-step-container {
-            max-width: 240px;
-            margin-right: 10px;
-            top: 10px
+
         }
         .field-group {
             max-width: 300px
@@ -574,7 +575,7 @@
     #vacation-prop-button-text {
         height: 30px;
         padding-top: 8px;
-        background-color: #5bb7f7;
+        background-color: green;
         font-size: 14px;
         color: #fff;
         font-weight: 400
@@ -604,7 +605,7 @@
     #PROP_DESC_OUTER_GROUP .selected,
     #PROP_PURP_OUTER_GROUP .selected,
     #SPEC_HOME .selected {
-        border-color: #5bb7f7
+        border-color: green
     }
 
     .btn-group {
@@ -632,7 +633,7 @@
             font-size: 18px;
             letter-spacing: 1px;
             text-align: left;
-            background-color: #34A6F5
+            background-color: green;
         }
         .btn-group .border.col-sm-4,
         .btn-group .border.col-sm-6 {
@@ -767,12 +768,12 @@
 
     .blue-btn,
     .blue-btn:hover {
-        color: #34A6F3
+        color: #006D00
     }
 
     .blue-btn {
         background: #e6e6e6;
-        border-color: #34A6F3;
+        border-color: #006D00;
         border-width: 1px;
         border-radius: 0;
         font-size: 20px;
@@ -780,7 +781,7 @@
     }
 
     .blue-btn.selected {
-        background: #5BB7F7;
+        background: green;
         color: #fff
     }
 
@@ -808,8 +809,8 @@
     }
 
     body .ui-slider .ui-slider-range {
-        background: #5bb7f7;
-        border-color: #5bb7f7;
+        background: green;
+        border-color: green;
         border-radius: 2px
     }
 
@@ -1465,10 +1466,10 @@
         #PROP_DESC_OUTER_GROUP .border:hover,
         #PROP_PURP_OUTER_GROUP .btn-group .border:hover,
         #SPEC_HOME .btn-group .border:hover {
-            border-color: #5bb7f7
+            border-color: green
         }
         .blue-btn:hover {
-            background: #5BB7F7;
+            background: green;
             color: #fff
         }
     }
