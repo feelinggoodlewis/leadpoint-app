@@ -60,16 +60,6 @@
   </div>
   </div>
   <div id="bottom-section" class="container">
-    <div id="securityLogo">
-      <ul>
-        <li><a href="javascript:window.open('//www.securerights.org', 'SecureRights', 'width=800,height=400,scrollbars', 'true').focus();"
-            id="secureSealImg" <="" a=""></a></li>
-        <li><a href="javascript:window.open('//www.leadpoint.com/licenses.php', 'EqualHousing', 'width=800,height=400,scrollbars', 'true').focus();"
-            id="houseSealImg"></a></li>
-        <li><a href="javascript:window.open('//www.bbb.org/losangelessiliconvalley/business-reviews/marketing-programs-and-services/leadpoint-in-los-angeles-ca-100025882', 'BBB', 'width=800,height=400,scrollbars', 'true').focus();"
-            id="bbOnlineSealImg"></a></li>
-      </ul>
-    </div>
     <footer class="footerSection">
       <div id="footerLinks">
         <ul>
@@ -79,8 +69,6 @@
           <li id="footerLink3" class=""><a href="#" class="tmmfs_lightboxLink">Terms &amp; Conditions</a></li>
           <li
             id="footerLink4" class=""><a href="#" class="tmmfs_lightboxLink">Privacy Policy</a></li>
-            <li id="footerLink5"
-              class="listLastItem"><a href="//www.leadpoint.com/licenses.php" class="tmmfs_popLink">Licenses</a></li>
         </ul>
       </div>
       <div class="container" id="containerFooter">
