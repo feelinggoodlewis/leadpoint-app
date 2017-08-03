@@ -38,12 +38,22 @@
         line-height: 1;
         min-width: 320px;
         text-align: center;
-        background-color: #ADD67F;
+        background-color: #fff;
         overflow-x: hidden
     }
 
     .form-box {
         padding-top: 10px;
+    }
+
+    #bottom-section {
+        background-color: #fff;
+        width: 100%;
+        color: #a8a8a8;
+    }
+
+    #bottom-section a {
+        color: #a8a8a8 !important;
     }
 
     #product-header,
@@ -64,7 +74,7 @@
     .navbar {
         margin-bottom: 30px;
         padding-top: 10px;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
         border: 0;
         -o-transition: all .3s;
         -moz-transition: all .3s;
@@ -244,8 +254,8 @@
     }
 
     .inner-bg {
-        background: url(/images/house-background.png) center center no-repeat #ADD67F;
-        background-size: contain;
+        background: url(/images/background.jpg) center center no-repeat #ADD67F;
+        background-size: cover;
         padding-bottom: 40px;
         transition: background .2s ease;
         position: relative;
@@ -267,18 +277,14 @@
         text-align: center;
         font-size: 16px;
         font-weight: 400;
-        color: #fff;
+        color: #000;
         width: 80%;
         margin: 10px auto;
         left: 0;
         right: 0;
-        bottom: -15px
     }
 
     @media only screen and (max-width:767px) {
-        .inner-bg {
-            background-image: none
-        }
         .fixed-bg {
             min-height: 410px
         }
@@ -362,7 +368,6 @@
         opacity: 1;
         font-family: robotobold;
         line-height: 25px;
-        text-transform: lowercase
     }
 
     @media only screen and (max-width:767px) {
@@ -461,7 +466,8 @@
         -webkit-box-shadow: 1px 1px 1px 1px #aaa;
         -moz-box-shadow: 1px 1px 1px 1px #aaa;
         box-shadow: 1px 1px 1px 1px #aaa;
-        display: none
+        display: none;
+        margin-top: 20px;
     }
 
     #progress-step-container:after,
@@ -509,7 +515,7 @@
     div[id^=container-outer-header-] h3,
     label.header {
         font-size: 34px;
-        color: #fff;
+        color: #000;
         line-height: 30px
     }
 
@@ -709,7 +715,7 @@
     .input-label {
         line-height: 45px;
         text-align: left;
-        color: #fff;
+        color: #000;
         font-size: 24px
     }
 
@@ -789,12 +795,12 @@
         margin-top: 30px;
         text-align: center;
         font-size: 22px;
-        color: #fff;
+        color: #000;
         font-weight: 400
     }
 
     .form-group .visible-xs {
-        color: #fff;
+        color: #000;
         font-size: 18px
     }
 
@@ -1173,13 +1179,13 @@
     }
 
     .none-edit-cont {
-        color: #fff;
+        color: #000;
         font-size: 18px;
         text-align: center
     }
 
     body .validating-message {
-        color: #fff!important;
+        color: #000!important;
         font-size: 18px;
         text-align: center
     }
@@ -1216,7 +1222,7 @@
 
     #container-outer-header-BANK {
         text-align: center;
-        color: #fff;
+        color: #000;
         font-size: 34px;
         margin-bottom: 21px
     }
@@ -1286,7 +1292,7 @@
         padding-left: 35px;
         line-height: 1;
         margin-bottom: 10px;
-        color: #fff
+        color: #000
     }
 
     .tickbox label:after,
@@ -1298,7 +1304,7 @@
     .tickbox label:before {
         width: 24px;
         height: 24px;
-        border: 2px solid #fff;
+        border: 2px solid #000;
         border-radius: 3px;
         background-color: transparent;
         top: -1px;
@@ -1310,7 +1316,7 @@
         height: 7px;
         top: 6px;
         left: 5px;
-        border: 2px solid #fff;
+        border: 2px solid #000;
         border-top: none;
         border-right: none;
         background: 0 0;
