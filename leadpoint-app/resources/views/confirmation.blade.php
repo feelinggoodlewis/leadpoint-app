@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mortgage News and Rates - LeadPoint App</title>
   <link rel="shortcut icon" href="{{ asset('images/favicon-fha__vmaster_119.png') }}">
+
+
 </head>
 
 <body id="blue-skies">
@@ -76,11 +78,11 @@
         </ul>
       </div>
       <div class="container" id="containerFooter">
-        <p>
-          <p>LeadPoint is an online news and information service providing editorial content and directory information
-            about mortgages and loans. LeadPointis not a lender or mortgage broker and does not offer loans or mortgages
+
+         <p>RateCheetah is an online news and information service providing editorial content and directory information
+            about mortgages and loans. RateCheetah is not a lender or mortgage broker and does not offer loans or mortgages
             directly or indirectly through representatives or agents. LeadPoint does not provide an application for
-            credit or a mortgage loan. LeadPoint is not responsible for the accuracy of information or responsible for
+            credit or a mortgage loan. RateCheetah is not responsible for the accuracy of information or responsible for
             the accuracy of the rates, APR or loan information posted by brokers, lenders or advertisers. All trademarks
             and logos appearing on this site are the property of their respective owners. Their appearance on this site does
             not indicate or imply an endorsement of our product.<br><br>Terms and Conditions Apply –<br>The actual interest
@@ -89,8 +91,8 @@
             This offer may not be available in all states and is subject to change without notice. Payment does not include
             taxes and insurance premiums. Some state and county maximum loan amount restrictions may apply. Mortgage rates
             could change daily. Actual payments will vary based on your individual situation and current rates. Some restrictions
-            may apply.<br><br><br>[NMLS ID: XXXX] <a target="_blank" href="#">NMLS License Access Page</a></p>
-        </p>
+            may apply.<br><br><br></p>
+
       </div>
       <div class="container text-center" id="copyright">Copyright &#0169; All rights reserved.</div>
     </footer>
@@ -117,5 +119,14 @@
       pointer-events: none;
     }
   </style>
+
+    <!--Place this script between </form> and </body>--> <script>
+dataLayer = [{
+'a': '41091', 'i': '18710'
+}];
+</script>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCMVZ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-KCMVZ6');</script>
+<!--end SR tag-->
 </body>
 </html>

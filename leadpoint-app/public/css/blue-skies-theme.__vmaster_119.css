@@ -320,7 +320,12 @@
         }
     }
 
-    #back_button,
+    #back_button {
+        float: none;
+        width: 100%;
+        color: #000
+    }
+
     #continue_button {
         float: none;
         width: 100%;
@@ -343,7 +348,7 @@
     }
 
     #back_button span:before {
-        color: #fff;
+        color: #000;
         content: "\f100"
     }
 
