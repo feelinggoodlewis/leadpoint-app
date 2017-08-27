@@ -181,7 +181,7 @@
     //group2 PRODUCT DESCRIPTION
     slide2 = { groupName: "PROP_DESC", fieldGroupId: "PROP_DESC_FIELD_GROUP", fieldGroupHeader: "Property Description", fieldGroupCssClasses: "field-group", formGroupCssClasses: "form-group", fieldGroupInlineCss: "display:none", fieldGroupProduct: "ALL", canAutoNext: !0, hideNextButton: !0, showPageHeader: !0, showProgressbar: !1, fields: [{ fieldName: "PROP_DESC", defaultValue: "", fieldType: "TileInput", buttons: [{ buttonId: "single_prop", buttonText: "Single family", buttonValue: "single_fam", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-3 col-xs-6" }, { buttonId: "multiple_prop", buttonText: "Multi family", buttonValue: "multi_fam", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-3 col-xs-6" }, { buttonId: "townhouse_prop", buttonText: "Town house", buttonValue: "town_house", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-3 col-xs-6" }, { buttonId: "condo_prop", buttonText: "Condominium", buttonValue: "condo", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-3 col-xs-6" }], buttonInnerGroupClasses: "btn-group", buttonOutterGroupClasses: "border row" }] },
     //group3 Estimated Credit Rating
-    slide3 = { groupName: "CRED_GRADE", fieldGroupId: "CRED_GRADE_FIELD_GROUP", fieldGroupHeader: "Estimated Credit Rating", fieldGroupCssClasses: "field-group", formGroupCssClasses: "form-group", fieldGroupInlineCss: "display:none", fieldGroupProduct: "ALL", showPageHeader: !1, canAutoNext: !0, hideNextButton: !0, fields: [{ fieldName: "CRED_GRADE", defaultValue: "", fieldType: "TileInput", buttonsSouthText: "Most people have good credit", buttons: [{ buttonId: "excellent_grade", buttonText: "Excellent", buttonValue: "EXCELLENT", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-2" }, { buttonId: "good_grade", buttonText: "Good", buttonValue: "GOOD", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-2" }, { buttonId: "average_grade", buttonText: "Average", buttonValue: "GOOD", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-2" }, { buttonId: "fair_grade", buttonText: "Fair", buttonValue: "FAIR", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-2" }, { buttonId: "poor_grade", buttonText: "Poor", buttonValue: "POOR", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-2" }], buttonInnerGroupClasses: "btn-group", buttonOutterGroupClasses: "border row" }] },
+    slide3 = { groupName: "CRED_GRADE", fieldGroupId: "CRED_GRADE_FIELD_GROUP", fieldGroupHeader: "Estimated Credit Rating", fieldGroupCssClasses: "field-group", formGroupCssClasses: "form-group", fieldGroupInlineCss: "display:none", fieldGroupProduct: "ALL", showPageHeader: !1, canAutoNext: !0, hideNextButton: !0, fields: [{ fieldName: "CRED_GRADE", defaultValue: "", fieldType: "TileInput", buttonsSouthText: "Most people have good credit", buttons: [{ buttonId: "excellent_grade", buttonText: "Excellent", buttonValue: "EXCELLENT", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-2" }, { buttonId: "good_grade", buttonText: "Good", buttonValue: "GOOD", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-2" }, { buttonId: "average_grade", buttonText: "Average", buttonValue: "GOOD", buttonClasses: "btn img-responsive center-block track-button", buttonDivClasses: "border col-sm-2" }, { buttonId: "fair_grade", buttonText: "Fair", buttonValue: "FAIR", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-2" }, { buttonId: "poor_grade", buttonText: "Poor", buttonValue: "POOR", buttonClasses: "btn img-responsive center-block", buttonDivClasses: "border col-sm-2" }], buttonInnerGroupClasses: "btn-group", buttonOutterGroupClasses: "border row" }] },
     //group 4 ZIP
     slide4 = { groupName: "ZIP", fieldGroupId: "ZIP_FIELD_GROUP", fieldGroupHeader: "ZIP Code", fieldGroupCssClasses: "field-group", formGroupCssClasses: "form-group", fieldGroupInlineCss: "display:none", fieldGroupProduct: "ALL", showPageHeader: !1, fields: [{ fieldName: "ZIP", defaultValue: "", usePrepopulated: !0, fieldType: "tel", fieldClasses: "validate", labelClasses: "", labelText: "", fieldDivClasses: "", labelDivClass: "input-label", fieldMaxLength: 5, placeholder: "ZIP", requiredField: !0, requiredFieldErrMessage: "Valid Zip Code is required.", extraAttributes: [{ attributeName: "validateelement", attributeValue: "FIELD-BODY-ZIP" }] }] },
     //group Found a Home - Mortgage/ New Home *Needs two buttons inside this group
@@ -329,6 +329,7 @@
       pointer-events: none;
     }
   </style>
+
   <script>
     $("#form1").append("<input type='hidden' id='LPKEY' name='LPKEY'>");
     $("#form1").append("<input type='hidden' id='EXPIRED_FORM' name='EXPIRED_FORM'>");
@@ -544,6 +545,29 @@
           }
         }
   </script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1654495311497731');
+fbq('track', "PageView");
+
+$('.track-button').click(function(){
+  console.log('clicked');
+  fbq('track', "ViewContent", {
+    content_name: 'Button has been clicked',
+  });
+});
+
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=295532650645516&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 
   <!--Place this script between </form> and </body>--> <script>
 dataLayer = [{
